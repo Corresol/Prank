@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_gemsgenrator"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="wink.arvind.com.myapplication.Gemsgenrator">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@mipmap/background_bg"
+        android:scaleType="centerCrop"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+android:src="@mipmap/notice_logo"
+      />
+
+
+
+    <Button
+        android:background="@mipmap/next_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="55dp"
+        android:id="@+id/button" />
+
+    <com.startapp.android.publish.ads.banner.Banner
+        android:id="@+id/startAppBanner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@mipmap/genrator_box"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:orientation="vertical"
+        >
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="104dp"
+            android:id="@+id/gems"
+            android:hint="Gems"
+            android:inputType="number"
+            android:singleLine="true"
+            android:imeOptions="actionNext"
+            android:paddingLeft="50dp"
+            android:background="@mipmap/gems_field"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/coins"
+            android:background="@mipmap/coins_field"
+            android:hint="Coins"
+            android:singleLine="true"
+            android:inputType="number"
+
+            android:imeOptions="actionDone"
+            android:paddingLeft="50dp"
+            android:layout_below="@+id/gems"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"/>
+    </LinearLayout>
+
+</RelativeLayout>
